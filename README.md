@@ -203,7 +203,7 @@ Live Demo
 
 Live URL:
 
-<YOUR_DEPLOYED_URL>
+https://cmstravelers.vercel.app
 
 GitHub Repository
 
