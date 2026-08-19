@@ -1,0 +1,166 @@
+.newsletter {
+    width: 100%;
+    padding: var(--space-16) 0;
+    background-color: var(--color-background);
+}
+
+.newsletter-content {
+    width: 100%;
+    min-height: 153px;
+    padding: 24px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    background-image: url('../assets/images/packages/kelingkingbeach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.newsletter-text {
+    flex-shrink: 0;
+}
+
+.newsletter-subtitle {
+    margin: 0 0 6px;
+    color: var(--color-white);
+    font-family: var(--font-el-messiri);
+    font-size: 23px;
+    font-weight: var(--font-weight-medium);
+    line-height: 30px;
+    letter-spacing: 0;
+}
+
+.newsletter-title {
+    margin: 0;
+    color: var(--color-white);
+    font-family: var(--font-work-sans);
+    font-size: 44.18px;
+    line-height: 100%;
+    letter-spacing: -2%;
+}
+
+.newsletter-form {
+    width: 268px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: var(--color-white);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.newsletter-form input {
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--color-text-primary);
+    font-family: var(--font-open-sans);
+    font-size: 10px;
+}
+
+.newsletter-form input::placeholder {
+    color: #B7B7B7;
+}
+
+.newsletter-form button {
+    width: 40px;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #8E96FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.newsletter-form button span {
+    display: block;
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 800px) {
+    .newsletter {
+        padding: var(--space-12) 0;
+    }
+
+    .newsletter-content {
+        min-height: 145px;
+        padding: 22px;
+        gap: 20px;
+    }
+
+    .newsletter-subtitle {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .newsletter-title {
+        font-size: 36px;
+        letter-spacing: -0.72px;
+    }
+
+    .newsletter-form {
+        width: 250px;
+    }
+}
+
+@media (max-width: 650px) {
+    .newsletter-content {
+        min-height: 190px;
+        padding: 24px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .newsletter-subtitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .newsletter-title {
+        font-size: 30px;
+        letter-spacing: -0.6px;
+    }
+
+    .newsletter-form {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .newsletter-content {
+        min-height: 210px;
+        padding: 22px 18px;
+    }
+
+    .newsletter-subtitle {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .newsletter-title {
+        font-size: 27px;
+        letter-spacing: -0.54px;
+    }
+
+    .newsletter-form {
+        max-width: 100%;
+    }
+}

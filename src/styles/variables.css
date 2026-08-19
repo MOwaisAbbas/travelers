@@ -1,0 +1,112 @@
+:root {
+
+    /* ================================
+     Font Families
+     ================================= */
+
+    --font-open-sans: "Open Sans", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-work-sans: "Work Sans", sans-serif;
+    --font-el-messiri: "El Messiri", sans-serif;
+    --font-karla: "Karla", sans-serif;
+
+    /* ================================
+     Colors
+     ================================= */
+
+    --color-primary: #3F4579;
+    --color-secondary: #f4f1ff;
+
+    --color-white: #ffffff;
+    --color-black: #0E0700;
+
+    --color-text-primary: #0E0700;
+    --color-text-secondary: #7A7A7A;
+    --color-text-muted: #E1F0F0;
+
+    --color-background: #ffffff;
+    --color-background-light: #f8f7fc;
+
+    --color-border: #e8e8e8;
+
+
+    /* ================================
+     Typography
+     ================================= */
+
+    --font-primary: sans-serif;
+    --font-secondary: serif;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 48px;
+    --font-size-4xl: 64px;
+
+
+    /* ================================
+     Font Weights
+     ================================= */
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+
+    /* ================================
+     Container
+     ================================= */
+
+    --container-width: 1050px;
+    --container-padding: 24px;
+
+
+    /* ================================
+     Border Radius
+     ================================= */
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
+    --radius-full: 999px;
+
+
+    /* ================================
+     Spacing
+     ================================= */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+
+
+    /* ================================
+     Transitions
+     ================================= */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+
+
+    /* ================================
+     Shadows
+     ================================= */
+
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.1);
+}

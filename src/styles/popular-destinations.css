@@ -1,0 +1,319 @@
+.popular-destinations {
+    width: 100%;
+    padding: 48px 0 64px;
+    background: var(--color-background);
+}
+
+.popular-destinations-header {
+    margin-bottom: 18px;
+}
+
+.popular-destinations-label {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--color-primary);
+    font-family: var(--font-inter);
+    font-size: 21px;
+    font-weight: var(--font-weight-regular);
+    line-height: 30px;
+    letter-spacing: 0;
+}
+
+.popular-destinations-title {
+    margin: 0;
+    color: #28312f;
+    font-family: var(--font-el-messiri);
+    font-size: 48px;
+    font-weight: var(--font-weight-regular);
+    line-height: 60px;
+    letter-spacing: 0;
+    text-transform: capitalize;
+}
+
+.popular-destinations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.7fr;
+    gap: 2rem;
+}
+
+.popular-destinations-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background: var(--color-background-light);
+}
+
+.popular-destinations-card-large {
+    grid-row: 1 / 3;
+}
+
+.popular-destinations-card-small {
+    min-width: 0;
+}
+
+.popular-destinations-card-wide {
+    grid-column: 2/-1;
+}
+
+.popular-destinations-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.popular-destinations-card:hover .popular-destinations-image {
+    transform: scale(1.04);
+}
+
+.popular-destinations-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 13px 10px 10px 13px;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 42%,
+            rgba(0, 0, 0, 0.1) 58%,
+            rgba(0, 0, 0, 0.72) 100%);
+}
+
+.popular-destinations-info {
+    min-width: 0;
+}
+
+.popular-destinations-name {
+    margin: 0;
+    color: var(--color-white);
+    font-family: var(--font-el-messiri);
+    font-size: 24.77px;
+    font-weight: var(--font-weight-semibold);
+    line-height: 27.25px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.popular-destinations-location {
+    display: block;
+    margin-top: 1px;
+    color: var(--color-white);
+    font-family: var(--font-karla);
+    font-size: 14.15px;
+    font-weight: var(--font-weight-regular);
+    line-height: 16.99px;
+    letter-spacing: -0.18px;
+    white-space: nowrap;
+}
+
+.popular-destinations-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 29px;
+    flex: 0 0 29px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: var(--radius-full);
+    background: rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.popular-destinations-arrow:hover {
+    background: var(--color-white);
+}
+
+.popular-destinations-arrow img {
+    display: block;
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    transition: var(--transition-fast);
+}
+
+.popular-destinations-arrow:hover img {
+    filter: none;
+}
+
+.popular-destinations-card-large .popular-destinations-overlay {
+    padding: 17px 11px 12px 14px;
+}
+
+.popular-destinations-card-large .popular-destinations-arrow {
+    width: 31px;
+    height: 31px;
+    flex-basis: 31px;
+}
+
+.popular-destinations-card-small .popular-destinations-overlay {
+    padding: 9px 9px 9px 12px;
+}
+
+.popular-destinations-card-small .popular-destinations-name {
+    font-size: 17px;
+    line-height: 19px;
+}
+
+.popular-destinations-card-small .popular-destinations-location {
+    font-size: 9px;
+    line-height: 11px;
+}
+
+.popular-destinations-card-small .popular-destinations-arrow {
+    width: 27px;
+    height: 27px;
+    flex-basis: 27px;
+}
+
+.popular-destinations-card-wide .popular-destinations-overlay {
+    padding: 12px 10px 10px 13px;
+}
+
+.popular-destinations-card-wide .popular-destinations-name {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.popular-destinations-card-wide .popular-destinations-location {
+    font-size: 9px;
+    line-height: 11px;
+}
+
+@media (max-width: 800px) {
+    .popular-destinations {
+        padding: 42px 0 56px;
+    }
+
+    .popular-destinations-label {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .popular-destinations-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .popular-destinations-grid {
+        width: 100%;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .popular-destinations {
+        padding: 36px 0 48px;
+    }
+
+    .popular-destinations-label {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .popular-destinations-title {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .popular-destinations-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .popular-destinations-card {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .popular-destinations-name {
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .popular-destinations-location {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .popular-destinations-card-small .popular-destinations-name,
+    .popular-destinations-card-wide .popular-destinations-name {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .popular-destinations-card-small .popular-destinations-location,
+    .popular-destinations-card-wide .popular-destinations-location {
+        font-size: 8px;
+        line-height: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .popular-destinations {
+        padding: 30px 0 40px;
+    }
+
+    .popular-destinations-label {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .popular-destinations-title {
+        font-size: 29px;
+        line-height: 36px;
+    }
+
+    .popular-destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .popular-destinations-card {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .popular-destinations-overlay {
+        padding: 8px;
+    }
+
+    .popular-destinations-name {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .popular-destinations-location {
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .popular-destinations-arrow {
+        width: 25px;
+        height: 25px;
+        flex-basis: 25px;
+    }
+
+    .popular-destinations-arrow img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .popular-destinations-card-small .popular-destinations-name,
+    .popular-destinations-card-wide .popular-destinations-name {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .popular-destinations-card-small .popular-destinations-location,
+    .popular-destinations-card-wide .popular-destinations-location {
+        font-size: 7px;
+        line-height: 9px;
+    }
+}

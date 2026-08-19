@@ -1,0 +1,211 @@
+.activities {
+    position: relative;
+    width: 100%;
+    padding: var(--space-16) 0;
+    overflow: hidden;
+    background-color: #EDEEF6;
+}
+
+.activities-illustration {
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    width: 25%;
+    height: auto;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.activities .container {
+    position: relative;
+    z-index: 1;
+}
+
+.activities-header {
+    text-align: center;
+    margin-bottom: var(--space-10);
+}
+
+.activities-title {
+    margin: 0 0 var(--space-2);
+    color: var(--color-primary);
+    font-family: var(--font-el-messiri);
+    font-size: 48px;
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+    line-height: 60px;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.activities-subtitle {
+    margin: 0;
+    color: var(--color-primary);
+    font-family: var(--font-inter);
+    font-size: 21px;
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.activities-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+}
+
+.activity-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    min-height: 180px;
+    padding: var(--space-6);
+    border-radius: var(--radius-md);
+    background-color: var(--color-background);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.activity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-sm);
+}
+
+.activity-icon {
+    width: 82px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.activity-name {
+    color: var(--color-text-primary);
+    font-family: var(--font-work-sans);
+    font-size: var(--font-size-md);
+    line-height: 1.4;
+    text-align: center;
+    font-family: var(--font-inter);
+}
+
+
+@media (max-width: 800px) {
+    .activities {
+        padding: var(--space-12) 0;
+    }
+
+    .activities-illustration {
+        width: 150px;
+        right: 10px;
+    }
+
+    .activities-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .activities-header {
+        margin-bottom: var(--space-8);
+    }
+
+    .activities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-5);
+    }
+
+    .activity-card {
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 650px) {
+    .activities {
+        padding: var(--space-10) 0;
+    }
+
+    .activities-illustration {
+        width: 120px;
+        top: 0;
+        right: 0;
+    }
+
+    .activities-title {
+        font-size: 28px;
+        letter-spacing: -0.5px;
+    }
+
+    .activities-subtitle {
+        font-size: var(--font-size-md);
+    }
+
+    .activities-grid {
+        gap: var(--space-4);
+    }
+
+    .activity-card {
+        min-height: 145px;
+        padding: var(--space-4);
+        gap: var(--space-3);
+    }
+
+    .activity-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .activity-name {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (max-width: 450px) {
+    .activities {
+        padding: var(--space-8) 0;
+    }
+
+    .activities-illustration {
+        width: 90px;
+    }
+
+    .activities-title {
+        font-size: 24px;
+    }
+
+    .activities-header {
+        margin-bottom: var(--space-6);
+    }
+
+    .activities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-3);
+    }
+
+    .activity-card {
+        min-height: 125px;
+        padding: var(--space-3);
+    }
+
+    .activity-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .activity-name {
+        font-size: var(--font-size-xs);
+    }
+
+    .activities-pagination {
+        margin-top: var(--space-6);
+    }
+}
